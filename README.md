@@ -189,35 +189,3 @@ python base_predict.py
 ```
 
 Configure paths and hyperparameters in the script before running.
-
-
-
-## Technical Details
-
-### Motion Energy Computation
-
-The motion energy is computed from hand keypoints using confidence-weighted squared displacement:
-
-```
-E_t = Σ [1[conf_t ≥ θ] × 1[conf_{t-1} ≥ θ] × conf_t × conf_{t-1} × ||x_t - x_{t-1}||²]
-```
-
-This ensures that unreliable or occluded joints contribute less to the energy signal.
-
-### Diffusion Process
-
-The DSR module uses a mask-based diffusion process:
-1. Initialize with segment concatenation
-2. Iteratively mask and denoise tokens
-3. Transfer tokens based on confidence scores
-4. Apply LexMasker guidance at specified steps
-5. Decode final state to text
-
-### LexMasker Mechanism
-
-LexMasker distinguishes content words from function words using:
-- Rule-based POS classification
-- Named Entity Recognition (pattern-based)
-- Optional ML-based classifier (LSTM)
-
-Content words (nouns, verbs, numerals, named entities) are preserved as semantic anchors, while function words (articles, prepositions, conjunctions) can be re-masked for refinement.
