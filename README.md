@@ -2,7 +2,9 @@
 
 ## Overview
 
-BoostSLT is a novel framework for improving Sign Language Translation (SLT) quality, especially for long-form and discourse-level inputs. The framework addresses two key limitations of current SLT systems: (1) performance degradation on long sequences, and (2) error accumulation in autoregressive generation. BoostSLT is plug-and-play and model-agnostic, seamlessly integrating with existing gloss-based or gloss-free SLT pipelines.
+BoostSLT is a novel framework for improving Sign Language Translation (SLT) quality, especially for long-form and discourse-level inputs. The framework addresses two key limitations of current SLT [...]
+
+![BoostSLT Poster](BoostSLT_CVPR2026_v2.png)
 
 ### Key Features
 
