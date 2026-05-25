@@ -1,8 +1,17 @@
 # BoostSLT: Boosting Sign Language Translation via a Plug-and-Play Diffusion-Based Semantic Enhancer
 
+
+
 ## Overview
 
-BoostSLT is a novel framework for improving Sign Language Translation (SLT) quality, especially for long-form and discourse-level inputs. The framework addresses two key limitations of current SLT [...]
+BoostSLT is a novel framework for improving Sign Language Translation (SLT) quality, especially for long-form and discourse-level inputs.
+
+### Motivation & Gaps
+
+ - Long sign videos remain difficult: Current SLT models work well on short sentences but often lose coherence on long sequences.
+ - Gloss annotations are expensive and hard to scale: Gloss-based SLT needs precise gloss boundaries, which are expensive and hard to scale.
+ - Autoregressive decoding accumulates errors. 
+ - We aim to design a plug-and-play framework that segments long videos and reconstructs the full translation globally.
 
 ### Key Features
 
