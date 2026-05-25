@@ -1,5 +1,6 @@
 # BoostSLT: Boosting Sign Language Translation via a Plug-and-Play Diffusion-Based Semantic Enhancer
 
+![BoostSLT_CVPR2026_v2](BoostSLT_CVPR2026_v2.png)
 
 
 ## Overview
