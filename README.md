@@ -4,8 +4,6 @@
 
 BoostSLT is a novel framework for improving Sign Language Translation (SLT) quality, especially for long-form and discourse-level inputs. The framework addresses two key limitations of current SLT [...]
 
-![BoostSLT Poster](BoostSLT_CVPR2026_v2.png)
-
 ### Key Features
 
 - **Energy-Aware Temporal Segmentation (EAT-Seg)**: Unsupervised segmentation of long sign videos into semantically coherent segments based on motion energy analysis
